@@ -59,6 +59,8 @@ module.exports = class CocoView extends Backbone.View
     @listenTo(@supermodel, 'failed', @onResourceLoadFailed)
     @warnConnectionError = _.throttle(@warnConnectionError, 3000)
 
+    $('body').addClass 'product-' + utils.getProductName().toLowerCase()
+
     # Warn about easy-to-create race condition that only shows up in production
     listenedSupermodel = @supermodel
     _.defer =>
@@ -78,7 +80,10 @@ module.exports = class CocoView extends Backbone.View
     if utils.isCodeCombat
       $('#modal-wrapper .modal').off 'shown.bs.modal', @modalShown
     @$el.find('.has-tooltip, [data-original-title]').tooltip 'destroy'
-    @$('.nano').nanoScroller destroy: true
+    try
+      @$('.nano').nanoScroller destroy: true
+    catch e
+      console.log('dont know why but ', @$('.nano'), ' failed with ', e)
     @endHighlight()
     @getPointer(false).remove()
     @[key] = undefined for key, value of @

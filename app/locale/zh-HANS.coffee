@@ -730,6 +730,7 @@ module.exports = nativeDescription: "简体中文", englishDescription: "Chinese
     done: "完成"
 #    remove: "Remove"
     locked: "已锁定"
+    empty_results: "未找到结果"
 
   general:
     and: "与"
@@ -2494,6 +2495,9 @@ module.exports = nativeDescription: "简体中文", englishDescription: "Chinese
 #    not_write_permission: "You don't have write permission to the class"
 #    not_read_permission: "You don't have read permission to the class"
     owned_license: "已有许可"
+    license_stats: "许可数据"
+    redeemers: "学生（已激活）"
+    removed_redeemers: "学生（曾激活）"
 
   teacher_licenses:
     active_licenses: "可用许可"
@@ -2541,11 +2545,12 @@ module.exports = nativeDescription: "简体中文", englishDescription: "Chinese
     teachers_using_these: "可以访问这些许可证的教师："
     footer: "许可证分配后不支持撤销。"
     you: "（您）"
-    one_license_used: "（1个许可证被使用）"
-    licenses_used: "（__licensesUsed__个许可证被使用）"
-    licenses_used_no_braces: "__licensesUsed__个许可证被使用"
+    one_license_used: "（1/__all__个许可证被使用）"
+    licenses_used: "（__licensesUsed__/__all__个许可证被使用）"
+    licenses_used_no_braces: "__licensesUsed__/__all__个许可证被使用"
     more_info: "更多信息"
     shared_pool_label: "共享池中的老师列表:"
+    licenses_limit: "限制许可证数量："
 
   sharing:
     game: "游戏"
@@ -3761,6 +3766,10 @@ module.exports = nativeDescription: "简体中文", englishDescription: "Chinese
     totals_explanation_8: "项目创建"
     totals_explanation_9: "统计创建的游戏和网页总数。"
     date_thru_date: "从 __startDateRange__ 到 __endDateRange__"
+    select_time_range: '选择一个时间段：'
+    export: "下载"
+    preview: '以下为前200行的数据预览，点击下载以获得完整数据'
+    empty_results: "未找到结果"
 
   interactives:
     phenomenal_job: "了不起的工作！"

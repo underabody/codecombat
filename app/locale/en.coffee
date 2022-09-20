@@ -735,6 +735,7 @@ module.exports = nativeDescription: "English", englishDescription: "English", tr
     locked: "Locked"
     internal_error: "Internal Error"
     manage: "Manage"
+    empty_results: "Empty Results."
 
   general:
     and: "and"
@@ -2502,6 +2503,9 @@ module.exports = nativeDescription: "English", englishDescription: "English", tr
     archive_revoke_confirm: " students of the archived class have active licenses. Would you like to revoke them so that you can re-apply them to other students?"
     archive_without_revoking: "Archive Without Revoking"
     revoke_and_archive: "Revoke and Archive"
+    license_stats: "License Stats"
+    redeemers: "Active Students"
+    removed_redeemers: "Inactive Students"
 
   teacher_licenses:
     active_licenses: "Active Licenses"
@@ -2549,12 +2553,13 @@ module.exports = nativeDescription: "English", englishDescription: "English", tr
     teachers_using_these: "Teachers who can access these licenses:"
     footer: "When teachers revoke licenses from students, the licenses will be returned to the shared pool for other teachers in this group to use."
     you: "(you)"
-    one_license_used: "(1 license used)"
-    licenses_used: "(__licensesUsed__ licenses used)"
-    licenses_used_no_braces: "__licensesUsed__ licenses used"
+    one_license_used: "(1/__all__ license used)"
+    licenses_used: "(__licensesUsed__/__all__ licenses used)"
+    licenses_used_no_braces: "__licensesUsed__/__all__ licenses used"
     more_info: "More info"
     shared_pool_label: "Teachers in your shared pool:"
     teacher_delete_warning: "The shared licenses assigned to the teacher won't be revoked!"
+    licenses_limit: "Licenses Limit:"
 
   sharing:
     game: "Game"
@@ -3698,11 +3703,13 @@ module.exports = nativeDescription: "English", englishDescription: "English", tr
     banner_ozar: "Happy Computer Science Education Week!"
     page_heading: "Your students will learn to code by building their own game!"
     page_heading_ai_league: "Your students will learn to code their own multiplayer AI!"
+    page_heading_goblins: "Your students will learn coding by saving a village from goblins!"
     step_1: "Step 1: Watch Video Overview"
     step_2: "Step 2: Try it Yourself"
     step_3: "Step 3: Download Lesson Plan"
     try_activity: "Try Activity"
     download_pdf: "Download PDF"
+    solutions: "Solutions"
     teacher_signup_heading: "Turn Hour of Code into a Year of Code"
     teacher_signup_blurb: "Everything you need to teach computer science, no prior experience needed."
     teacher_signup_input_blurb: "Get first course free:"
@@ -3713,7 +3720,8 @@ module.exports = nativeDescription: "English", englishDescription: "English", tr
     activity_label_2: " Beginner GD: Build a Game!"
     activity_label_3: "Advanced GD: Build an Arcade Game!"
     activity_label_hoc_2018: "Intermediate GD: Code, Play, Create"
-    activity_label_ai_league: "Beginner CS: Road to the AI League"
+    activity_label_ai_league: "Beginner CS: Esports Bootcamp: AI League"
+    activity_label_goblins: "Beginner CS: Goblins 'n' Glory"
     activity_button_1: "View Lesson"
     about: "About CodeCombat"
     about_copy: "A game-based, standards-aligned computer science program that teaches real, typed Python and JavaScript."
@@ -3772,6 +3780,10 @@ module.exports = nativeDescription: "English", englishDescription: "English", tr
     date_thru_date: '__startDateRange__ thru __endDateRange__'
     teachers: 'Teachers'
     students_enrolled: 'Students Enrolled'
+    select_time_range: 'Select the time range:'
+    export: "Export"
+    preview: 'Here is a preview for top 200 lines, Click the Export to get full stats'
+    empty_results: "Empty Results."
 
   interactives:
     phenomenal_job: 'Phenomenal Job!'
