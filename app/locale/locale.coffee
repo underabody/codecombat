@@ -20,7 +20,7 @@ module.exports =
   'pt-BR': { nativeDescription: 'Português (Brasil)', englishDescription: 'Portuguese (Brazil)' }
   # Begin alphabetized list: https://github.com/codecombat/codecombat/issues/2329#issuecomment-74630546
   'ar': { nativeDescription: 'العربية', englishDescription: 'Arabic' }
-  'az': { nativeDescription: 'azərbaycan dili', englishDescription: 'Azerbaijani' }
+  'az': { nativeDescription: 'Azərbaycan dili', englishDescription: 'Azerbaijani' }
   'bg': { nativeDescription: 'български език', englishDescription: 'Bulgarian' }
   'ca': { nativeDescription: 'Català', englishDescription: 'Catalan' }
   'cs': { nativeDescription: 'čeština', englishDescription: 'Czech' }
